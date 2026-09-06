@@ -1,0 +1,183 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #4a3f45;
+    background-color: #fff7f9;
+    margin: 0;
+}
+
+
+header {
+    background-color: #f7c9d4;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 5px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #b44d6a;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+#home {
+    text-align: center;
+}
+
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #f0d9df;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #b44d6a;
+}
+
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+
+.form-card {
+    max-width: 560px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #f0d9df;
+    border-radius: 12px;
+}
+
+
+.form-card label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #d9bfc7;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+
+.form-card button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #b44d6a;
+    color: white;
+    font-size: 16px;
+}
+
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0d9df;
+    text-align: left;
+}
+
+
+.data-table th {
+    background-color: #f7e5ea;
+    color: #6b3d4c;
+}
+
+
+footer {
+    background-color: #f7c9d4;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #b44d6a;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .form-card {
+        max-width: 100%;
+    }
+
+    .data-table {
+        font-size: 14px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
