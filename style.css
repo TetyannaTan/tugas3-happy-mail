@@ -229,19 +229,20 @@ footer a {
     }
 
     .order-table {
-        width: 100%;
-        font-size: 13px;
-        table-layout: fixed;
-    }
+    width: 100%;
+    font-size: 13px;
+    table-layout: auto;
+}
+
+    .order-table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
     .order-table th,
     .order-table td {
-        padding: 7px;
-        word-break: break-word;
-        overflow-wrap: break-word;
-    }
-
-    footer {
-        padding: 20px 10px;
-    }
+    width: 100%;
+    padding: 8px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
