@@ -244,41 +244,64 @@
 
 
 
-    <section id="order-data">
+<section id="order-data">
 
-        <h2>Order Data</h2>
+    <h2>Order Data</h2>
 
-        <p>
-            Data pesanan yang telah dimasukkan melalui formulir akan tampil
-            di tabel berikut.
-        </p>
+    <p>
+        Data pesanan yang telah dimasukkan melalui formulir akan tampil
+        di tabel berikut.
+    </p>
 
-        <div class="table-container">
+    <div class="table-container">
 
-            <table class="order-table">
+        <table class="order-table">
 
-                <thead>
-                    <tr>
-                        <th>Nama</th>
-                        <th>Penerima</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Mail</th>
-                        <th>Area</th>
-                        <th>Tanggal</th>
-                        <th>Pesan</th>
-                        <th>Special Request</th>
-                    </tr>
-                </thead>
+            <tbody id="orderTableBody">
 
-                <tbody id="orderTableBody">
-                </tbody>
+                <tr class="order-header">
+                    <th>Nama</th>
+                    <th>Penerima</th>
+                    <th>Email</th>
+                </tr>
 
-            </table>
+                <tr class="order-data-row">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
 
-        </div>
+                <tr class="order-header">
+                    <th>Phone</th>
+                    <th>Mail</th>
+                    <th>Area</th>
+                </tr>
 
-    </section>
+                <tr class="order-data-row">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr class="order-header">
+                    <th>Tanggal</th>
+                    <th>Pesan</th>
+                    <th>Special Request</th>
+                </tr>
+
+                <tr class="order-data-row">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
 
 </main>
 
