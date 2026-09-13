@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -16,23 +15,30 @@
 </header>
 
 <nav>
-    <a href="#home">Home</a> |
-    <a href="#mails">Our Mails</a> |
+    <a href="#home">Home</a>
+    <a href="#mails">Our Mails</a>
     <a href="#order">Order</a>
+    <a href="#order-data">Order Data</a>
 </nav>
 
 <main>
+
+    <!-- HOME -->
     <section id="home">
         <h2>Welcome to Happy Mail!</h2>
+
         <p>
             Happy Mail adalah layanan pengiriman surat kecil dan hadiah sederhana
             untuk orang-orang spesial. Kamu bisa mengirim pesan untuk teman,
             keluarga, pasangan, atau siapa pun yang ingin kamu buat tersenyum.
         </p>
+
         <img src="gambar/happy-mail.jpg"
              alt="Surat dan hadiah kecil dari Happy Mail"
              width="300">
+
         <h3>Kenapa pilih Happy Mail?</h3>
+
         <ul>
             <li>Pesan dapat dibuat sesuai keinginan.</li>
             <li>Pilihan mail untuk berbagai suasana.</li>
@@ -41,61 +47,79 @@
         </ul>
     </section>
 
+
+    <!-- MAIL CHOICES -->
     <section id="mails">
         <h2>Our Mail Choices</h2>
+
         <p>
             Pilih mail yang paling cocok untuk pesan yang ingin kamu sampaikan.
         </p>
-        <table class="data-table">
-            <tr>
-                <th>Mail</th>
-                <th>Isi</th>
-                <th>Harga</th>
-            </tr>
-            <tr>
-                <td><p>Thinking of You</p>
-                    <img src="gambar/thinking-of-you-mail.png"
-                    alt="Surat dan hadiah kecil dari Happy Mail"
-                    width="300"></td>
-                <td>Surat + bunga kecil + permen</td>
-                <td>Rp35.000</td>
-            </tr>
-            <tr>
-                <td><p>Birthday Mail</p>
-                    <img src="gambar/birthday-mail.png"
-                    alt="Kartu ulang tahun dari Happy Mail"
-                    width="300"></td>
-                <td>Kartu ulang tahun + surat + mini gift</td>
-                <td>Rp45.000</td>
-            </tr>
-            <tr>
-                <td><p>Cheer Up Mail</p>
-                    <img src="gambar/cheer-up-mail.png"
-                    alt="Surat semangat dari Happy Mail"
-                    width="300"></td>
-                <td>Surat + sticker + sweet treat</td>
-                <td>Rp40.000</td>
-            </tr>
-            <tr>
-                <td><p>Just Because Mail</p>
-                    <img src="gambar/just-because-mail.png"
-                    alt="Surat 'Just Because' dari Happy Mail"
-                    width="300"></td>
-                <td>Surat custom + surprise kecil</td>
-                <td>Rp40.000</td>
-            </tr>
-            <tr>
-                <td><p>Secret Mail</p>
-                    <img src="gambar/secret-mail.png"
-                    alt="Surat rahasia dari Happy Mail"
-                    width="300"></td>
-                <td>Surat anonim + mini gift</td>
-                <td>Rp45.000</td>
-            </tr>
-        </table>
+
+        <div class="table-container">
+            <table class="data-table">
+                <tr>
+                    <th>Mail</th>
+                    <th>Isi</th>
+                    <th>Harga</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Thinking of You</p>
+                        <img src="gambar/thinking-of-you-mail.png"
+                             alt="Surat dan hadiah kecil Thinking of You">
+                    </td>
+                    <td>Surat + bunga kecil + permen</td>
+                    <td>Rp35.000</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Birthday Mail</p>
+                        <img src="gambar/birthday-mail.png"
+                             alt="Kartu ulang tahun dari Happy Mail">
+                    </td>
+                    <td>Kartu ulang tahun + surat + mini gift</td>
+                    <td>Rp45.000</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Cheer Up Mail</p>
+                        <img src="gambar/cheer-up-mail.png"
+                             alt="Surat semangat dari Happy Mail">
+                    </td>
+                    <td>Surat + sticker + sweet treat</td>
+                    <td>Rp40.000</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Just Because Mail</p>
+                        <img src="gambar/just-because-mail.png"
+                             alt="Surat Just Because dari Happy Mail">
+                    </td>
+                    <td>Surat custom + surprise kecil</td>
+                    <td>Rp40.000</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Secret Mail</p>
+                        <img src="gambar/secret-mail.png"
+                             alt="Surat rahasia dari Happy Mail">
+                    </td>
+                    <td>Surat anonim + mini gift</td>
+                    <td>Rp45.000</td>
+                </tr>
+            </table>
+        </div>
 
         <h3>Available in Batam</h3>
+
         <p>Happy Mail saat ini melayani beberapa area di Batam:</p>
+
         <ol>
             <li>Batam Centre</li>
             <li>Nagoya</li>
@@ -106,18 +130,24 @@
         </ol>
     </section>
 
+
+    <!-- ORDER FORM -->
     <section id="order">
         <h2>Send a Happy Mail</h2>
+
         <p>
             Isi formulir berikut untuk membuat pesanan Happy Mail kamu.
         </p>
-        <form class="form-card">
+
+        <form id="orderForm" class="form-card">
+
             <label for="name">Your Name:</label>
             <input type="text"
                    id="name"
                    name="name"
                    placeholder="Masukkan nama kamu"
                    required>
+
 
             <label for="penerima">Nama Penerima:</label>
             <input type="text"
@@ -126,6 +156,7 @@
                    placeholder="Masukkan nama penerima"
                    required>
 
+
             <label for="email">Your Email:</label>
             <input type="email"
                    id="email"
@@ -133,37 +164,55 @@
                    placeholder="contoh@email.com"
                    required>
 
+
             <label for="phone">Your Phone:</label>
             <input type="tel"
                    id="phone"
                    name="phone"
                    placeholder="Masukkan nomor telepon kamu"
-                   required> 
+                   required>
+
 
             <label for="mail-type">Choose Your Mail:</label>
             <select id="mail-type"
                     name="mail_type"
                     required>
+
                 <option value="">-- Pilih Happy Mail --</option>
-                <option value="thinking-of-you">Thinking of You - Rp35.000</option>
-                <option value="birthday">Birthday Mail - Rp45.000</option>
-                <option value="cheer-up">Cheer Up Mail - Rp40.000</option>
-                <option value="just-because">Just Because - Rp40.000</option>
-                <option value="secret-mail">Secret Mail - Rp45.000</option>
+                <option value="Thinking of You - Rp35.000">
+                    Thinking of You - Rp35.000
+                </option>
+                <option value="Birthday Mail - Rp45.000">
+                    Birthday Mail - Rp45.000
+                </option>
+                <option value="Cheer Up Mail - Rp40.000">
+                    Cheer Up Mail - Rp40.000
+                </option>
+                <option value="Just Because - Rp40.000">
+                    Just Because - Rp40.000
+                </option>
+                <option value="Secret Mail - Rp45.000">
+                    Secret Mail - Rp45.000
+                </option>
+
             </select>
+
 
             <label for="area">Delivery Area:</label>
             <select id="area"
                     name="area"
                     required>
+
                 <option value="">-- Pilih Area --</option>
-                <option value="batam-centre">Batam Centre</option>
-                <option value="nagoya">Nagoya</option>
-                <option value="lubuk-baja">Lubuk Baja</option>
-                <option value="bengkong">Bengkong</option>
-                <option value="sekupang">Sekupang</option>
-                <option value="batu-aji">Batu Aji</option>
+                <option value="Batam Centre">Batam Centre</option>
+                <option value="Nagoya">Nagoya</option>
+                <option value="Lubuk Baja">Lubuk Baja</option>
+                <option value="Bengkong">Bengkong</option>
+                <option value="Sekupang">Sekupang</option>
+                <option value="Batu Aji">Batu Aji</option>
+
             </select>
+
 
             <label for="date">Delivery Date:</label>
             <input type="date"
@@ -171,32 +220,81 @@
                    name="date"
                    required>
 
+
             <label for="message">Your Message:</label>
             <textarea id="message"
                       name="message"
                       placeholder="Tulis pesan yang ingin kamu kirim..."
                       rows="5"
-                      cols="40"
                       required></textarea>
+
 
             <label for="request">Special Request:</label>
             <textarea id="request"
                       name="special_request"
                       placeholder="Contoh: warna favorit penerima, request tambahan, dan lainnya."
-                      rows="3"
-                      cols="40"></textarea>
+                      rows="3"></textarea>
+
 
             <button type="submit">Send Happy Mail</button>
+
         </form>
     </section>
+
+
+    <!-- ORDER DATA -->
+    <section id="order-data">
+
+        <h2>Order Data</h2>
+
+        <p>
+            Data pesanan yang telah dimasukkan melalui formulir akan tampil
+            di tabel berikut.
+        </p>
+
+        <div class="table-container">
+
+            <table class="order-table">
+
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Penerima</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Mail</th>
+                        <th>Area</th>
+                        <th>Tanggal</th>
+                        <th>Pesan</th>
+                        <th>Special Request</th>
+                    </tr>
+                </thead>
+
+                <tbody id="orderTableBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
 </main>
 
+
 <footer>
+
     <p>Happy Mail - Send a little happiness.</p>
+
     <p>
         Follow us on
         <a href="https://instagram.com/tytn_ttn">Instagram</a>
     </p>
+
 </footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
