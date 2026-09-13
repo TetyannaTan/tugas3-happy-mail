@@ -230,8 +230,19 @@ footer a {
 
     .order-table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
     font-size: 13px;
-    table-layout: auto;
+}
+
+    .order-table th,
+    .order-table td {
+    padding: 8px;
+    border: 1px solid #f0d9df;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
 }
 
     .order-table tr {
