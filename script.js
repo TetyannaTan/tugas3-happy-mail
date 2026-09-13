@@ -16,19 +16,20 @@ form.addEventListener("submit", function(event) {
     const message = document.getElementById("message").value;
     const request = document.getElementById("request").value;
 
-    const row = document.createElement("tr");
+    const rows = orderTableBody.querySelectorAll(".order-data-row");
 
-    row.innerHTML = `
-        <td>${name}</td>
-        <td>${penerima}</td>
-        <td>${email}</td>
-        <td>${phone}</td>
-        <td>${mailType}</td>
-        <td>${area}</td>
-        <td>${date}</td>
-        <td>${message}</td>
-        <td>${request}</td>
-    `;
-    orderTableBody.appendChild(row);
+    rows[0].cells[0].textContent = name;
+    rows[0].cells[1].textContent = penerima;
+    rows[0].cells[2].textContent = email;
+
+    rows[1].cells[0].textContent = phone;
+    rows[1].cells[1].textContent = mailType;
+    rows[1].cells[2].textContent = area;
+
+    rows[2].cells[0].textContent = date;
+    rows[2].cells[1].textContent = message;
+    rows[2].cells[2].textContent = request;
+
     form.reset();
+
 });

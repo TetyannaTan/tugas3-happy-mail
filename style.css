@@ -127,19 +127,15 @@ section img {
     color: #6b3d4c;
 }
 
-.order-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    table-layout: fixed;
-}
+
 
 .order-table th,
 .order-table td {
     padding: 12px;
     border: 1px solid #f0d9df;
     text-align: left;
-    word-wrap: break-word;
+    vertical-align: top;
+    word-break: break-word;
     overflow-wrap: break-word;
 }
 
