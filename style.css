@@ -177,8 +177,13 @@ nav {
         padding: 8px;
     }
 
+    .order-table {
+        min-width: 900px;
+    }
+
     nav {
         flex-direction: column;
         gap: 5px;
     }
+
 }

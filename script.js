@@ -29,9 +29,6 @@ form.addEventListener("submit", function(event) {
         <td>${message}</td>
         <td>${request}</td>
     `;
-
     orderTableBody.appendChild(row);
-
     form.reset();
-
 });

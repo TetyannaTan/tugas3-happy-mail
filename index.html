@@ -23,8 +23,11 @@
 </nav>
 
 <main>
+
+
     <section id="home">
         <h2>Welcome to Happy Mail!</h2>
+
         <p>
             Happy Mail adalah layanan pengiriman surat kecil dan hadiah sederhana
             untuk orang-orang spesial. Kamu bisa mengirim pesan untuk teman,
@@ -45,6 +48,8 @@
         </ul>
     </section>
 
+
+
     <section id="mails">
         <h2>Our Mail Choices</h2>
 
@@ -59,6 +64,7 @@
                     <th>Isi</th>
                     <th>Harga</th>
                 </tr>
+
                 <tr>
                     <td>
                         <p>Thinking of You</p>
@@ -68,6 +74,7 @@
                     <td>Surat + bunga kecil + permen</td>
                     <td>Rp35.000</td>
                 </tr>
+
                 <tr>
                     <td>
                         <p>Birthday Mail</p>
@@ -77,6 +84,7 @@
                     <td>Kartu ulang tahun + surat + mini gift</td>
                     <td>Rp45.000</td>
                 </tr>
+
                 <tr>
                     <td>
                         <p>Cheer Up Mail</p>
@@ -86,6 +94,7 @@
                     <td>Surat + sticker + sweet treat</td>
                     <td>Rp40.000</td>
                 </tr>
+
                 <tr>
                     <td>
                         <p>Just Because Mail</p>
@@ -95,6 +104,7 @@
                     <td>Surat custom + surprise kecil</td>
                     <td>Rp40.000</td>
                 </tr>
+
                 <tr>
                     <td>
                         <p>Secret Mail</p>
@@ -121,6 +131,8 @@
         </ol>
     </section>
 
+
+
     <section id="order">
         <h2>Send a Happy Mail</h2>
 
@@ -129,12 +141,14 @@
         </p>
 
         <form id="orderForm" class="form-card">
+
             <label for="name">Your Name:</label>
             <input type="text"
                    id="name"
                    name="name"
                    placeholder="Masukkan nama kamu"
                    required>
+
 
             <label for="penerima">Nama Penerima:</label>
             <input type="text"
@@ -143,12 +157,14 @@
                    placeholder="Masukkan nama penerima"
                    required>
 
+
             <label for="email">Your Email:</label>
             <input type="email"
                    id="email"
                    name="email"
                    placeholder="contoh@email.com"
                    required>
+
 
             <label for="phone">Your Phone:</label>
             <input type="tel"
@@ -157,10 +173,12 @@
                    placeholder="Masukkan nomor telepon kamu"
                    required>
 
+
             <label for="mail-type">Choose Your Mail:</label>
             <select id="mail-type"
                     name="mail_type"
                     required>
+
                 <option value="">-- Pilih Happy Mail --</option>
                 <option value="Thinking of You - Rp35.000">
                     Thinking of You - Rp35.000
@@ -177,12 +195,15 @@
                 <option value="Secret Mail - Rp45.000">
                     Secret Mail - Rp45.000
                 </option>
+
             </select>
+
 
             <label for="area">Delivery Area:</label>
             <select id="area"
                     name="area"
                     required>
+
                 <option value="">-- Pilih Area --</option>
                 <option value="Batam Centre">Batam Centre</option>
                 <option value="Nagoya">Nagoya</option>
@@ -190,13 +211,16 @@
                 <option value="Bengkong">Bengkong</option>
                 <option value="Sekupang">Sekupang</option>
                 <option value="Batu Aji">Batu Aji</option>
+
             </select>
+
 
             <label for="date">Delivery Date:</label>
             <input type="date"
                    id="date"
                    name="date"
                    required>
+
 
             <label for="message">Your Message:</label>
             <textarea id="message"
@@ -205,15 +229,20 @@
                       rows="5"
                       required></textarea>
 
+
             <label for="request">Special Request:</label>
             <textarea id="request"
                       name="special_request"
                       placeholder="Contoh: warna favorit penerima, request tambahan, dan lainnya."
                       rows="3"></textarea>
 
+
             <button type="submit">Send Happy Mail</button>
+
         </form>
     </section>
+
+
 
     <section id="order-data">
 
@@ -225,7 +254,9 @@
         </p>
 
         <div class="table-container">
+
             <table class="order-table">
+
                 <thead>
                     <tr>
                         <th>Nama</th>
@@ -239,21 +270,32 @@
                         <th>Special Request</th>
                     </tr>
                 </thead>
+
                 <tbody id="orderTableBody">
                 </tbody>
+
             </table>
+
         </div>
+
     </section>
+
 </main>
 
+
 <footer>
+
     <p>Happy Mail - Send a little happiness.</p>
+
     <p>
         Follow us on
         <a href="https://instagram.com/tytn_ttn">Instagram</a>
     </p>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
