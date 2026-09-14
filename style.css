@@ -232,7 +232,7 @@ footer a {
     border-collapse: collapse;
     margin-top: 15px;
     font-size: 13px;
-}
+    }
 
     .order-table th,
     .order-table td {
@@ -241,18 +241,6 @@ footer a {
     text-align: left;
     vertical-align: top;
     overflow-wrap: break-word;
-}
-}
-
-    .order-table tr {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-    .order-table th,
-    .order-table td {
-    width: 100%;
-    padding: 8px;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
