@@ -1,3 +1,9 @@
+const dateInput = document.getElementById("date");
+
+const today = new Date().toISOString().split("T")[0];
+
+dateInput.min = today;
+
 const form = document.getElementById("orderForm");
 
 const orderTableBody = document.getElementById("orderTableBody");
