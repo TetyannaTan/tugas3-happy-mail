@@ -127,7 +127,10 @@ section img {
     color: #6b3d4c;
 }
 
-
+.data-table img {
+    width: 120px;
+    height: auto;
+}
 
 .order-table th,
 .order-table td {
